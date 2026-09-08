@@ -1,0 +1,31 @@
+{
+  "name": "kashtanka-landing",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "assets:webp": "node scripts/convert-images-to-webp.mjs",
+    "compress:dist": "node scripts/compress-dist.mjs",
+    "build": "vite build && npm run compress:dist",
+    "format": "prettier --write \"src/**/*.{js,css,jsx}\" \"scripts/**/*.mjs\" vite.config.js",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "oxlint": "^1.79.0",
+    "prettier": "^3.9.6",
+    "sharp": "^0.34.5",
+    "vite": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
