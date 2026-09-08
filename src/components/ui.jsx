@@ -29,6 +29,24 @@ function Icon({ name }) {
         <path d="M12 13v1.2m0 0c-.8 0-1.4-.4-1.4-.9m1.4.9c.8 0 1.4-.4 1.4-.9" />
       </>
     ),
+    home: (
+      <>
+        <path d="M12 4.5 4.5 11v8a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-8L12 4.5Z" />
+        <path d="M9.5 20v-5.5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1V20" />
+      </>
+    ),
+    login: (
+      <>
+        <path d="M13 5A7 7 0 1 0 13 19" />
+        <path d="M9 12h10m-4-3.5L11 12l4 3.5" />
+      </>
+    ),
+    'check-box': (
+      <>
+        <rect x="3.5" y="3.5" width="17" height="17" rx="3.5" />
+        <path d="m7.5 12 3 3 6-6" />
+      </>
+    ),
     heart: (
       <path d="M20.6 8.8c0 5.3-8.6 9.9-8.6 9.9S3.4 14.1 3.4 8.8A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.6 2.6Z" />
     ),
@@ -53,7 +71,9 @@ function Icon({ name }) {
 function Logo() {
   return (
     <a href="#top" className="logo" aria-label="Kashtanka">
-      <span className="logo-mark">✦</span>
+      <span className="logo-mark">
+        <Icon name="dog" />
+      </span>
       <span>
         KASHTANKA<small>ЗАВЕДИ ПУШИСТОГО ДРУГА</small>
       </span>

@@ -28,9 +28,10 @@ function Header() {
         <a href="#top">Щенки</a>
         <a href="#services">Услуги</a>
         <a href="#projects">Другое</a>
+        <span className="mobile-nav-divider" aria-hidden="true" />
         <a className="mobile-nav-action" href="#top">
           Продажа щенка
-          <Icon name="user" />
+          <Icon name="dog" />
         </a>
       </nav>
       <div className="top-tools">
