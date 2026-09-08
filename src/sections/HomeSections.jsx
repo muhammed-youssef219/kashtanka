@@ -24,18 +24,27 @@ function Header() {
           ×
         </button>
       </label>
+      <nav className="mobile-nav" aria-label="Разделы сайта">
+        <a href="#top">Щенки</a>
+        <a href="#services">Услуги</a>
+        <a href="#projects">Другое</a>
+        <a className="mobile-nav-action" href="#top">
+          Продажа щенка
+          <Icon name="user" />
+        </a>
+      </nav>
       <div className="top-tools">
         <button type="button" aria-label="Поиск">
           <Icon name="search" />
         </button>
-        <Button variant="outline" icon="user">
-          Вход
-        </Button>
-        <button type="button" aria-label="Избранное">
-          <Icon name="heart" />
+        <button type="button" aria-label="Сообщения">
+          <Icon name="chat" />
+        </button>
+        <button type="button" aria-label="Уведомления">
+          <Icon name="bell" />
         </button>
         <button type="button" aria-label="Профиль">
-          <Icon name="user" />
+          <Icon name="dog" />
         </button>
       </div>
     </header>
